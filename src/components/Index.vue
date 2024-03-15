@@ -8,7 +8,7 @@
       text-color="#fff"
       active-text-color="#ffd04b"
       :ellipsis="false"
-      style="position: sticky; top: 0"
+      style="position: sticky; top: 0; z-index: 999"
     >
       <el-menu-item index="1" @click="router.push('/productList')"
         >Test1</el-menu-item
