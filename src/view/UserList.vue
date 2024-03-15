@@ -23,15 +23,18 @@
         </template>
       </el-table-column>
     </el-table>
-    <el-pagination
-      small
-      background
-      v-model:current-page="pageinfo.currentPage"
-      :page-size="3"
-      layout="prev, pager, next"
-      :total="obj.data.length"
-      class="mt-4"
-    />
+    <div style="display: flex">
+      <el-pagination
+        small
+        background
+        v-model:current-page="pageinfo.currentPage"
+        :page-size="3"
+        layout="prev, pager, next"
+        :total="obj.data.length"
+        class="mt-4"
+        style="margin: auto"
+      />
+    </div>
   </div>
 </template>
 
